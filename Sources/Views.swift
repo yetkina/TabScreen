@@ -465,6 +465,7 @@ enum AppInfo {
     static let authorName = "Yetkin AYDIN"
     static let email = "info@yaydin.com"
     static let website = "https://www.yaydin.com"
+    static let sponsorURL = "https://github.com/sponsors/yetkina"
     static var version: String {
         let v = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0"
         let b = Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? "1"
@@ -506,6 +507,17 @@ struct AboutView: View {
                 Image(systemName: "globe").frame(width: 22)
                 Button(AppInfo.website.replacingOccurrences(of: "https://", with: "")) { m.openURL(AppInfo.website) }.buttonStyle(.link)
             }
+        }
+
+        Card {
+            Label(m.t("Support the project", "Projeyi destekle"), systemImage: "heart.fill").font(.headline)
+            Text(m.t("TabScreen is free, open source and has no ads. If it saved you time and you would like to support its development, you can sponsor it on GitHub. It is completely optional.",
+                     "TabScreen ücretsiz, açık kaynaklı ve reklamsızdır. Size zaman kazandırdıysa ve geliştirilmesine destek olmak isterseniz GitHub'da sponsor olabilirsiniz. Tamamen isteğe bağlıdır."))
+                .fixedSize(horizontal: false, vertical: true)
+            Button { m.openURL(AppInfo.sponsorURL) } label: {
+                Label(m.t("Sponsor on GitHub", "GitHub'da sponsor ol"), systemImage: "heart")
+            }
+            .tint(.pink)
         }
 
         Text("© 2026 " + AppInfo.authorName).font(.caption).foregroundStyle(.secondary)

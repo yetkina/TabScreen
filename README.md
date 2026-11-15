@@ -53,6 +53,10 @@ The App Store requires a sandbox. TabScreen installs software with Homebrew, man
 
 Yetkin AYDIN · [www.yaydin.com](https://www.yaydin.com) · info@yaydin.com
 
+### Support
+
+TabScreen is free and has no ads. If you find it useful, you can [sponsor it on GitHub](https://github.com/sponsors/yetkina). It is entirely optional.
+
 ### License
 
 MIT, see [LICENSE](LICENSE). Sunshine, Moonlight and Crisp are separate projects with their own licenses; TabScreen does not bundle them.
@@ -109,6 +113,10 @@ App Store sandbox zorunlu kılar. TabScreen Homebrew ile yazılım kurar, bir la
 ### Geliştirici
 
 Yetkin AYDIN · [www.yaydin.com](https://www.yaydin.com) · info@yaydin.com
+
+### Destek
+
+TabScreen ücretsizdir ve reklam içermez. Faydalı bulduysanız [GitHub'da sponsor](https://github.com/sponsors/yetkina) olabilirsiniz. Tamamen isteğe bağlıdır.
 
 ### Lisans
 
